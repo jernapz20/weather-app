@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="css/styles.css"/>
+
+    </head>
+    <body>
+        <div class="main-content">
+                {{!-- {{>header}}  --}}
+            <article class="widget">
+                <h1>Weather App</h1>
+                <form class="weatherLocation">
+                    <button class="btn-search">Search</button>
+                    <input class="Search" placeholder="Search a City" type = "text"/>
+                    
+                </form>
+                <div class="weatherIcon">
+                    <i class="wi wi-day-cloudy" style="margin-bottom: 20px;"></i>
+                </div>
+                <div class="weatherInfo">
+                    <div class="temperature"><span></span></div>
+                    <div class="description">    
+                        <div class="weatherCondition"></div>    
+                        <div class="place"></div>
+                    </div>
+                </div>
+                <div class="date"></div>
+            </article>
+        </div>
+        <script src="js/app.js"></script> <!-- absolute path -->
+    </body>
+</html>
